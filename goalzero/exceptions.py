@@ -16,21 +16,26 @@ class RequestException(IOError):
         super().__init__(*args, **kwargs)
 
 
-class ConnectError(RequestException):
+class ConnectError(Exception):
     """When a connection error is encountered."""
+    
+    pass
 
 
-class ConnectTimeout(ConnectionError):
+class ConnectTimeout(ConnectError):
     """The request timed out while trying to connect to the remote server."""
+    
+    pass
 
 
 class HostRequired(RequestException):
     """When a host is not provided."""
+    
+    pass
 
 
 class InvalidHost(RequestException):
     """The URL provided was somehow invalid."""
+    
+    pass
 
-
-class Timeout(RequestException):
-    """The request timed out."""
