@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="goalzero",
-    version="0.1.1",
+    version="0.1.2",
     author="Robert Hillis",
     author_email="tkdrob4390@yahoo.com",
     description="Goal Zero REST Api Library",
